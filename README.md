@@ -1,16 +1,13 @@
-# Task List
+# Internship Frontend
 
 React + Vite frontend for the Sketchverse Task Management application.
 
-Day 3: responsive task list component built with mock data.
-
 ## Features
 
-- Task cards showing title, assignee and estimated hours
-- Status dropdown on each task (Not Started, In Progress, Done)
-- Search box to filter tasks by title
-- Status filter and live task count
-- Responsive layout: 1 column on mobile, 2 columns on desktop
+- Responsive task list (1 column on mobile, 2 columns on desktop)
+- Add, delete and update the status of tasks
+- Search by title and filter by status
+- Tasks saved in the browser (localStorage)
 
 ## Run locally
 
@@ -36,8 +33,8 @@ npm run build
 
 ```
 src/
-  App.jsx        # page layout, search and filter state
-  TaskList.jsx   # responsive list component
-  mockTasks.js   # mock data and status options
-  App.css        # styles and media queries
+  App.jsx          # page layout, search and filter state
+  components/      # TaskList.jsx, TaskForm.jsx, Filters.jsx
+  hooks/           # useTasks.js
+  data/            # mockTasks.js
 ```
